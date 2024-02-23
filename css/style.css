@@ -71,11 +71,12 @@
   margin: 0;
 }
 .header-nav-link{
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   text-decoration: none;
   font-size: 16px;
   margin-right: 50px;
   color: inherit;
+  letter-spacing: 0.17px;
 }
 .header-phone{
   flex-shrink: 0;
@@ -85,13 +86,13 @@
   margin-right: 50px;
 }
 .header-phone-link{
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   text-decoration: none;
   font-size: 16px;
   color: inherit;
 }
 .button{
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-size: 16px;
   font-weight: 600;
   line-height: 160%;
@@ -105,13 +106,14 @@
 .navbar-button{
   flex-shrink: 0;
   height: 100%;
-  padding: 33px 39px 33px 50px;
+  padding: 25px 51px;
+  letter-spacing: 0.2px;
 }
 .header-button{
-  height: 100%;
+  letter-spacing: 0.1px;
 }
 .seporator{
-  background: #5C8EE5;
+  background: #5C8EE6;
   width: 150px;
   height: 2px;
 }
@@ -126,7 +128,9 @@
   font-family: "BebasNeue";
   font-size: 80px;
   line-height: 120%;
-  margin: 30px 0;
+  margin: 23px 0px 39px 0px;
+  letter-spacing: 0.8px;
+  word-spacing: -1.6px;
 }
 .header-text{
   font-family: "Noto Sans";
@@ -136,6 +140,8 @@
   font-weight: 400;
   line-height: 160%;
   margin-bottom: 50px;
+  letter-spacing: 0.19px;
+  word-spacing: -0.4px;
 }
 .header-features{
   display: flex;
@@ -147,7 +153,8 @@
   position: relative;
 }
 .header-features-item{
-  padding: 30px 50px;
+  padding: 29px 50px;
+  width: 288px;
   border: 1px solid rgba(235, 235, 240, 0.20);
 }
 .header-features-text{
@@ -155,6 +162,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
+  margin-bottom: 0;
 }
 .header-features-item:not(:last-child){
   border-right: none
@@ -168,6 +176,8 @@
   color:#292D33;
   font-size: 60px;
   line-height: 120%;
+  letter-spacing: 0.15px;
+  margin: 24px 0px 52px 0px;
 }
 .steps{
   display: flex;
@@ -176,7 +186,7 @@
   gap: 30px;
 }
 .steps-item{
-  max-width: 330px;
+  width: 330px;
 }
 .steps-num{
   color:#5C8EE5;
@@ -185,12 +195,13 @@
   line-height: 120%;
   display: flex;
   align-items: center;
+  letter-spacing: 0.8px;
 }
 .steps-num::after{
   content: "";
   height: 1px;
-  background: #EBEBF0;
-  width: 100%;
+  background: rgb(235, 235, 240);
+  width: 260px;
   margin-left: 30px;
 }
 .steps-title{
@@ -199,8 +210,10 @@
   font-size: 28px;
   font-weight: 400;
   line-height: 160%;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 34px;
+  margin-bottom: 11px;
+  width: 300px;
+  letter-spacing: 0.17px;
 }
 .steps-text{
   font-family: "Noto Sans";
@@ -210,6 +223,8 @@
   line-height: 160%;
   margin-top: 10px;
   margin-bottom: 20px;
+  width: 300px;
+  letter-spacing: 0.15px;
 }
 .steps-link{
   display: flex;
@@ -220,6 +235,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 160%;
+  letter-spacing: 0.2px;
 }
 .steps-link::before{
   content: "";
