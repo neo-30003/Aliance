@@ -41,6 +41,9 @@ html{
 .phone-svg{
   fill:#5C8EE6;
 }
+.logo{
+  display: none;
+}
 .logo-svg{
   width: 8.75rem;
   height: 2.75rem;
@@ -172,7 +175,7 @@ html{
 }
 .header-features-item{
   padding: 1.75rem 3.125rem;
-  min-height: 100%;
+  height: auto;
   width: 18rem;
   border: 1px solid rgba(235, 235, 240, 0.20);
 }
@@ -216,6 +219,7 @@ html{
 }
 .steps-item{
   max-width: 20.625rem;
+  height: auto;
 }
 .steps-num{
   color:#5C8EE6;
