@@ -10,7 +10,7 @@ html{
   font-weight: normal;
   font-style: normal;
   }
-.body{
+body{
   font-family: "Noto Sans", sans-serif;
 }
 .mobile-menu{
@@ -79,22 +79,48 @@ html{
   height: 100%;
 }
 .header-nav{
-  flex-basis: 100%;
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
   display: flex;
   list-style: none;
   padding: 0;
   padding-left: 3.125rem;
   margin: 0;
 }
+.header-nav-item{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .header-nav-item:not(:last-child){
   margin-right: 3.125rem;
 }
 .header-nav-link{
-  font-family: 'Noto Sans';
+  display: flex;
+  height: 100%;
+  align-items: center;
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
   letter-spacing: 0.17px;
+  position: relative;
+}
+.header-nav-link:after{
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #5C8EE6;
+  transition: width 0.2s;
+  right: 0;
+  left: auto;
+}
+.header-nav-link:hover::after{
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 .header-phone{
   flex-shrink: 0;
@@ -104,13 +130,11 @@ html{
   margin-right: 3.125rem;
 }
 .header-phone-link{
-  font-family: 'Noto Sans';
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
 }
 .button{
-  font-family: 'Noto Sans';
   font-size: 1rem;
   font-weight: 600;
   line-height: 160%;
@@ -154,7 +178,6 @@ html{
   word-spacing: -1.6px;
 }
 .header-text{
-  font-family: "Noto Sans";
   max-width: 45rem;
   font-size: 1rem;
   font-style: normal;
@@ -172,9 +195,10 @@ html{
   list-style: none;
   color: white;
   position: relative;
+  margin-bottom: 0;
 }
 .header-features-item{
-  padding: 1.75rem 3.125rem;
+  padding: 1.875rem 3.125rem;
   height: auto;
   width: 18rem;
   border: 1px solid rgba(235, 235, 240, 0.20);
@@ -193,11 +217,10 @@ html{
   cursor: pointer;
 }
 .header-features-text{
-  font-family: "Noto Sans";
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
-  margin-bottom: 0;
+  margin-bottom: -0.0625rem;
 }
 .section{
   margin-top: 9.375rem;
@@ -208,7 +231,7 @@ html{
   color:#292D33;
   font-size: 3.75rem;
   line-height: 120%;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.45px;
   margin: 1.5rem 0px 3.25rem 0px;
 }
 .steps{
@@ -216,6 +239,9 @@ html{
   list-style: none;
   padding: 0;
   gap: 1.875rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 16.9375rem;
 }
 .steps-item{
   max-width: 20.625rem;
@@ -239,7 +265,6 @@ html{
 }
 .steps-title{
   color: var(--txt, #292D33);
-  font-family: "Noto Sans";
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 160%;
@@ -249,7 +274,6 @@ html{
   letter-spacing: 0.17px;
 }
 .steps-text{
-  font-family: "Noto Sans";
   color:#828A99;
   font-size: 1rem;
   font-weight: 400;
@@ -264,7 +288,6 @@ html{
   align-items: center;
   text-decoration: none;
   color:#5C8EE5;
-  font-family: "Noto Sans";
   font-size: 1rem;
   font-weight: 600;
   line-height: 160%;
@@ -276,6 +299,10 @@ html{
   background: #5C8EE5;
   width: 2.5rem;
   margin-right: 1.25rem;
+  transition: width 0.2s;
+}
+.steps-link:hover::before{
+  width: 3.75rem;
 }
 .steps-buttons{
   display: none;
@@ -290,6 +317,89 @@ html{
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  flex-basis: 33%;
+  border: 1px solid #EBEBF0;
+  position: relative;
+  text-decoration: none;
+  transition: border 0.2s;
+  max-height: 37.1875rem;
+}
+.card:hover .card-title{
+  color: #5C8EE6;
+}
+.card:hover{
+  border-color: #5C8EE6;
+}
+.card-content{
+  padding: 2.5rem 3.125rem;
+}
+.card-title{
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: #292D33;
+  margin-top: 0;
+  margin-bottom: .625rem;
+  transition: color 0.2s;
+}
+.card-text{
+  color: #828A99;
+  font-size: 1rem;
+  line-height: 160%;
+  margin-bottom: 24.625rem;
+}
+.card-image{
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  position: absolute;
+}
+.trademark-cards{
+  display: flex;
+}
+.trademark-card{
+  flex-basis: 50%;
+  border: 1px solid #EBEBF0;
+  text-decoration: none;
+  transition: border 0.2s;
+  padding: 3.125rem;
+  display: flex;
+}
+.trademark-card-logo{
+  width: 100%;
+}
+.trademark-card-content{
+  margin: 3.125rem;
+  margin-top: .1375rem;
+};
+.trademark-card:hover .trademark-card-title{
+  color: #5C8EE6;
+}
+.trademark-card:hover{
+  border-color: #5C8EE6;
+}
+.trademark-card-title{
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+  transition: color 0.2s;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+.trademark-card-text{
+  color: #828A99;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: .75rem;
 }
 @media(max-width:1700px){
   html{
@@ -344,6 +454,9 @@ html{
   .steps-buttons{
     display: flex;
   }
+  .card{
+    flex-basis: 50%;
+  }
 }
 @media(max-width:992px){
   html{
@@ -388,7 +501,6 @@ html{
     fill:#ffffff;
   }
   .mobile-menu{
-    font-family: "Noto Sans";
     position: fixed;
     top: 0;
     right: 0;
@@ -485,6 +597,9 @@ html{
   }
   .header-content{
     padding-top: 3rem;
+  }
+  .card{
+    flex-basis: 100%;
   }
 }
 @media (max-width: 576px){
