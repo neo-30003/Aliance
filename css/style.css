@@ -363,7 +363,6 @@ body{
 }
 .trademark-cards{
   display: flex;
-  flex-wrap: wrap;
 }
 .trademark-card{
   flex-basis: 50%;
@@ -371,40 +370,49 @@ body{
   text-decoration: none;
   transition: border 0.2s;
   padding: 3.125rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 3.125rem;
+  grid-template-areas:
+   "logo title title"
+   "logo text text";
+   margin-top: 4px;
+   height: 280px;
 }
 .trademark-card-logo{
   width: 100%;
+  height: 100%;
+  grid-area: logo;
   fill: #828A99;
 }
-.trademark-card-content{
-  margin: 3.125rem;
-  margin-top: .1375rem;
-};
+.trademark-card-title{
+  grid-area: title;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+  transition: color 0.2s;
+  margin: 0;
+}
+.trademark-card-text{
+  grid-area: text;
+  font-style: normal;
+  color: #828A99;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: .625rem;
+  margin-right: 2.8px;
+}
 .trademark-card:hover{
   border-color: #5C8EE6;
 }
 .trademark-card:hover .trademark-card-logo{
   fill: #5C8EE6;
 }
-.trademark-card-title{
-  font-size: 1.75rem;
-  font-weight: 400;
-  line-height: 160%;
-  color: #292D33;
-  transition: color 0.2s;
-  letter-spacing: 0.3px;
-  margin: 0;
-}
 .trademark-card:hover .trademark-card-title{
   color: #5C8EE6;
-}
-.trademark-card-text{
-  color: #828A99;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 160%;
-  margin-top: .75rem;
 }
 @media(max-width:1700px){
   html{
@@ -461,6 +469,9 @@ body{
   }
   .card{
     flex-basis: 50%;
+  }
+  .trademark-card{
+    grid-template-columns: 100px auto;
   }
 }
 @media(max-width:992px){
@@ -609,6 +620,9 @@ body{
   .steps-num{
     font-size: 4rem;
   }
+  .trademark-cards{
+    flex-direction: column;
+  }
 }
 @media (max-width: 768px){
   .container{
@@ -617,7 +631,7 @@ body{
   .seporator{
     background: #5C8EE6;
     width: 8.3rem;
-    height: .125rem;
+    height: .143rem;
   }
   .header-title{
     font-size: 4rem;
@@ -629,7 +643,6 @@ body{
   }
   .header-text{
     font-size: 14px;
-    letter-spacing: 0;
     margin-bottom: 2.425rem;
   }
   .header-button{
@@ -704,5 +717,29 @@ body{
     font-size: 1.17rem;
     margin-top: 0;
     letter-spacing: 0.05px;
+  }
+  .trademark-card{
+    max-width: 28.75rem;
+    max-height: 22.33rem;
+    padding: 2.4rem;
+    grid-template-areas:
+     "logo title"
+     "text text";
+     grid-column-gap: 2.5rem;
+     grid-row-gap: 1.67rem;
+     margin-top: 0;
+  }
+  .trademark-card-logo{
+    width: 8.33rem;
+    height: 8.33rem;
+  }
+  .trademark-card-title{
+    font-size: 1.67rem;
+  }
+  .trademark-card-text{
+    font-size: 1.17rem;
+    margin-bottom: 0;
+    margin-top: 0.1rem;
+    margin-right: 0;
   }
 }
