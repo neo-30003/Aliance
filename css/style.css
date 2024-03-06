@@ -377,8 +377,8 @@ body{
   grid-template-areas:
    "logo title title"
    "logo text text";
-   margin-top: 4px;
-   height: 280px;
+  margin-top: 4px;
+  height: 280px;
 }
 .trademark-card-logo{
   width: 100%;
@@ -725,9 +725,9 @@ body{
     grid-template-areas:
      "logo title"
      "text text";
-     grid-column-gap: 2.5rem;
-     grid-row-gap: 1.67rem;
-     margin-top: 0;
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 1.67rem;
+    margin-top: 0;
   }
   .trademark-card-logo{
     width: 8.33rem;
