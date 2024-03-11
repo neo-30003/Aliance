@@ -283,7 +283,7 @@ body{
   width: 18.75rem;
   letter-spacing: 0.15px;
 }
-.steps-link{
+.button-link{
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -293,7 +293,7 @@ body{
   line-height: 160%;
   letter-spacing: 0.2px;
 }
-.steps-link::before{
+.button-link::before{
   content: "";
   height: 1px;
   background: #5C8EE5;
@@ -301,7 +301,7 @@ body{
   margin-right: 1.25rem;
   transition: width 0.2s;
 }
-.steps-link:hover::before{
+.button-link:hover::before{
   width: 3.75rem;
 }
 .steps-buttons{
@@ -414,6 +414,98 @@ body{
 .trademark-card:hover .trademark-card-title{
   color: #5C8EE6;
 }
+.founder{
+  min-height: 41.25rem;
+  position: relative;
+}
+.founder-photo{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+.founder-content{
+  max-width: 45rem;
+  padding-top: 50px;
+}
+.founder-content-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+.founder-text{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+}
+.founder-text-paragraph-1{
+  margin-top: -24px;
+  letter-spacing: 0.13px;
+  margin-bottom: 22px;
+}
+.founder-text-paragraph-2{
+  margin-top: 0;
+  letter-spacing: 0.15px;
+  margin-bottom: 31px;
+}
+.founder-button-text-1{
+  display: block;
+}
+.founder-button-text-2{
+  display: none;
+}
+.clients-wrapper{
+  display: flex;
+  gap: 3.125rem;
+}
+.clients-content{
+  flex-basis: 50%;
+}
+.clients-list{
+  list-style: none;
+  padding: 0;
+  columns: 2 auto;
+  margin-top: -8px;
+  gap: 49px;
+}
+.clients-list-item{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+  margin-bottom: 20px;
+  letter-spacing: 0.13px;
+}
+.clients-logo-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0.1;
+  width: 720px;
+  height: 480px;
+  margin-top: 1.875rem;
+}
+.clients-logo-item{
+  flex-basis: 33%;
+  border: 1px solid #EBEBF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.2s;
+}
+.clients-logo-item:hover{
+  filter: grayscale(0%);
+}
+.clients-logo{
+  max-width: 100%;
+  width: 4.375rem;
+  height: 4.375rem;
+}
 @media(max-width:1700px){
   html{
     font-size: 14px;
@@ -438,6 +530,9 @@ body{
   }
   .header-phone{
     margin-right: 2rem;
+  }
+  .founder-photo{
+    width: 40%;
   }
 }
 /* Для экранов 1440px */
@@ -472,6 +567,12 @@ body{
   }
   .trademark-card{
     grid-template-columns: 100px auto;
+  }
+  .founder-content{
+    max-width: 35rem;
+  }
+  .clients-content{
+    flex-basis: 60%;
   }
 }
 @media(max-width:992px){
@@ -623,6 +724,16 @@ body{
   .trademark-cards{
     flex-direction: column;
   }
+  .clients-wrapper{
+    flex-direction: column;
+  }
+  .founder-button-text-1{
+    display: none;
+  }
+  .founder-button-text-2{
+    display: block;
+    word-spacing: 0;
+  }
 }
 @media (max-width: 768px){
   .container{
@@ -674,13 +785,18 @@ body{
     word-spacing: 2px;
     margin-bottom: 2.1rem;
   }
-  .steps-link{
+  .button-link{
     font-size: 14px;
     word-spacing: 1.5px;
   }
-  .steps-link::before{
+  .button-link::before{
     width: 3.3rem;
     margin-right: 1.8rem;
+  }
+  .founder-photo{
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
   }
 }
 @media (max-width: 576px){
@@ -741,5 +857,51 @@ body{
     margin-bottom: 0;
     margin-top: 0.1rem;
     margin-right: 0;
+  }
+  .founder-photo{
+    margin-bottom: 0;
+  }
+  .founder-text{
+    font-size: 1.17rem;
+    line-height: 158%;
+  }
+  .founder-text-paragraph-1{
+    margin-top: -18px;
+    margin-bottom: 9px;
+  }
+  .founder-text-paragraph-2{
+    margin-bottom: 19px;
+    letter-spacing: 0.1px;
+  }
+  .clients-wrapper{
+    gap: 2.3rem;
+  }
+  .clients-list{
+    columns: 1;
+    margin-top: 2.67rem;
+    margin-bottom: 0;
+  }
+  .clients-logo-list{
+    width: auto;
+    height: auto;
+  }
+  .clients-list-item{
+    gap: 1.65rem;
+    font-size: 1.17rem;
+    margin-bottom: 1.25rem;
+  }
+  .clients-list-item:last-child{
+    margin-bottom: 0;
+  }
+  .clients-logo-list{
+    margin-top: 0;
+  }
+  .clients-logo-item{
+    flex-basis: 50%;
+    width: 14.33rem;
+    height: 9.17rem;
+  }
+  .clients-logo-item:last-child{
+    display: none;
   }
 }
