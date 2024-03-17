@@ -36,13 +36,21 @@ body {
 .navbar-light {
   background-color: #fff;
   color: #292D33;
+}
+.logo-dark {
+  display: none;
+}
+.navbar-light .logo-light {
+  display: none;
+}
+.navbar-light .logo-dark {
+  display: block;
+}
+.navbar-scroll {
   height: 4.625rem;
 }
 .phone-svg {
   fill:#5C8EE6;
-}
-.logo {
-  display: none;
 }
 .logo-svg {
   width: 8.75rem;
@@ -167,6 +175,74 @@ body {
   position: relative;
   z-index: 1;
   color: white;
+}
+.page-header {
+  padding-top: 9.375rem;
+  padding-bottom: 3.125rem;
+  color: #292D33;
+  position: relative;
+}
+.page-header-bg-thumb {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  max-width: 30rem;
+}
+.page-header-bg-image {
+  background-image: url("../img/blog/blog-post.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #F0F2F5;
+}
+.page-header-bg-image:before {
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 45, 51, 0.6);
+}
+.page-header-bg-image .container {
+  position: relative;
+}
+.page-header-title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 120%;
+  color: inherit;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: .625rem;
+}
+.breadcrumbs-link {
+  text-decoration: none;
+  color: inherit;
+}
+.breadcrumbs-link {
+  color: #828A99;
+}
+.breadcrumbs-item.active .breadcrumbs-link {
+  color: #292D33;
+}
+.breadcrumbs-item:not(:last-child)::after {
+  content: "-";
+  margin-left: .625rem;
+}
+.page-header-bg-image .breadcrumbs-link,
+.breadcrumbs-item.active .breadcrumbs-link {
+  color: #fff;
 }
 .header-title {
   max-width: 67.5rem;
