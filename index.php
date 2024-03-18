@@ -834,7 +834,7 @@
         <div class="footer-wrapper footer-wrapper-legal">
           <div class="footer-legal">
             <p class="footer-copyright">
-              &copy; 2022 «Aliance Production». Все права защищены.
+              &copy; <?php echo date('Y') ?> «Aliance Production». Все права защищены.
             </p>
             <a href="#" class="footer-policy">
               Политики конфиденциальности
