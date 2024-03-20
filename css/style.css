@@ -714,7 +714,7 @@ body {
 }
 .input:focus {
   border: 1px solid #5C8EE6;
-  outline: none;
+  outline: 0;
 }
 .input:focus ~ .input-group-label, 
 .input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
@@ -723,6 +723,20 @@ body {
   font-size: .625rem;
   background-color: inherit;
   padding: 0 .625rem;
+}
+.input.is-invalid {
+  border: 1px solid red;
+}
+.just-validate-error-label {
+  position: absolute;
+  top: 0;
+  right: .625rem;
+  background-color: inherit;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  display: inline-block;
 }
 .cta-form-footer {
   display: flex;
@@ -921,7 +935,7 @@ body {
   transform: translateY(-10%);
   opacity: 0;
   transition: transform 0.3s, opacity 0.3s;
-  height: 39.1875rem;
+  max-height: 43.625rem;
 }
 .modal-close {
   display: block;
@@ -935,6 +949,15 @@ body {
   justify-content: center;
   border: 1px solid #EBEBF0;
 }
+.modal-close-alert {
+  top: 2.65rem;
+}
+.thanks-icon {
+  display: flex;
+  margin-top: .625rem;
+  width: 22.5rem;
+  height: 19.375rem;
+}
 .modal-title {
   font-family: "BebasNeue";
   font-style: normal;
@@ -944,6 +967,10 @@ body {
   margin-top: 0;
   margin-bottom: 1.65rem;
   letter-spacing: 0.37px;
+}
+.modal-title-alert {
+  margin-top: 1.625rem;
+  letter-spacing: 0.2px;
 }
 .modal-text {
   font-style: normal;
@@ -972,6 +999,14 @@ body {
   font-size: .875rem;
   font-weight: 700;
   padding: 1.18rem 0;
+}
+.modal-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font-size: .875rem;
+  font-weight: 700;
+  padding: 1.25rem;
 }
 @media(max-width:1700px) {
   html {
@@ -1270,7 +1305,7 @@ body {
     min-width: auto;
   }
   .modal-dialog {
-    height: 47.33rem;
+    max-height: 47.33rem;
     padding: 2.3rem 2.5rem;
   }
   .modal-title {
@@ -1278,15 +1313,28 @@ body {
     line-height: 120%;
     margin-bottom: 0.833rem;
   }
+  .modal-title-alert {
+    margin-top: 1.525rem;
+  }
   .modal-close {
     width: 3.33rem;
     height: 3.33rem;
-    top: 2.4rem;
+    top: 2.7rem;
     right: 2.48rem;
+  }
+  .modal-close-alert {
+    top: 3.1rem;
+    right: 2.5rem;
+  }
+  .thanks-icon {
+    margin-top: .75rem;
+    width: 23.75rem;
+    height: 20.45167rem;
   }
   .modal-text {
     font-size: 1.167rem;
     line-height: 154%;
+    margin-bottom: 1.8rem;
   }
   .modal-form-footer {
     margin-top: 1.6rem;
@@ -1294,6 +1342,10 @@ body {
   .modal-form-button {
     font-size: 1.167rem;
     padding: 1.65rem
+  }
+  .modal-button {
+    font-size: 1.167rem;
+    padding: 1.6rem
   }
   .notify-text {
     max-width: 21.75rem;

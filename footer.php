@@ -16,7 +16,7 @@
               </div>
               <!-- /.input-group -->
               <div class="input-group">
-                <input id="user-phone" type="tel" class="input" name="userphone" placeholder=" " maxlength="30" required>
+                <input id="user-phone" type="tel" class="input phone-mask" name="userphone" placeholder=" " maxlength="30" required>
                 <label class="input-group-label" for="user-phone">Номер телефона</label>
               </div>
               <!-- /.input-group -->
@@ -189,11 +189,11 @@
       </div>
       <!-- /.container -->
     </footer>
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
         <!-- /.modal-title -->
-        <a href="#" class="modal-close" data-toggle="modal">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="close-icon" width="24" height="24">
             <use href="img/sprite.svg#close"></use>
           </svg>
@@ -211,7 +211,7 @@
             </div>
             <!-- /.input-group -->
             <div class="input-group modal-input-group">
-              <input id="modal-user-phone" type="tel" class="input modal-input" name="userphone" placeholder=" " maxlength="30" required>
+              <input id="modal-user-phone" type="tel" class="input modal-input phone-mask" name="userphone" placeholder=" " maxlength="30" required>
               <label class="input-group-label modal-input-group-label" for="modal-user-phone">Номер телефона</label>
             </div>
             <!-- /.input-group -->
@@ -235,7 +235,30 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+    <div class="modal" id="alert-modal" >
+      <div class="modal-dialog">
+        <svg class="thanks-icon">
+          <use href="img/sprite.svg#thanks_illu"></use>
+        </svg>
+        <h2 class="modal-title modal-title-alert">Спасибо за заявку!</h2>
+        <!-- /.modal-title -->
+        <a href="#" class="modal-close modal-close-alert" data-toggle="modal" data-target="#alert-modal">
+          <svg class="close-icon" width="24" height="24">
+            <use href="img/sprite.svg#close"></use>
+          </svg>
+        </a>
+        <!-- /.modal-close -->
+        <p class="modal-text">
+          Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
+        <!-- /.modal-text -->
+        <button type="submit" class="button modal-button">Вернуться на главную</button>
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
