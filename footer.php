@@ -252,7 +252,7 @@
           Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
         </p>
         <!-- /.modal-text -->
-        <button type="submit" class="button modal-button">Вернуться на главную</button>
+        <a href="./index.php" class="button modal-button">Вернуться на главную</a>
       </div>
       <!-- /.modal-dialog -->
     </div>
