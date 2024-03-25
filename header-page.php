@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Aliance Production</title>
+    <title><?= $page_title ?> - Aliance Production</title>
   </head>
-  <body class="front-page">
+  <body>
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-nav-item">
@@ -125,7 +125,7 @@
       </div>
       <!-- /.mobile-social-media -->
     </div>
-    <nav class="navbar">
+    <nav class="navbar navbar-light">
       <a href="#" class="mobile-menu-toggle">
         <div class="mobile-menu-line"></div>
         <div class="mobile-menu-line"></div>
@@ -185,100 +185,20 @@
       </button>
     </nav>
     <!-- /.navbar -->
-    <header class="header header-image">
+    <header class="page-header <?= $header_style;?>">
+      <!-- <img src="img/thumb.png" alt="" class="page-header-bg-thumb"> -->
       <div class="container">
-        <div class="header-content">
-          <div class="seporator"></div>
-          <h1 class="header-title">
-            <?php echo "Комплексное обеспечение товарами и расходными материалами бизнеса"?>
-          </h1>
-          <p class="header-text">
-            Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
-            высококачественный прототип будущего проекта напрямую зависит от анализа существующих паттернов поведения.
-          </p>
-          <a href="./about.php" class="header-button button">
-            Подробнее о компании
-          </a>
-        </div>
-        <!-- /.header-content -->
-        <!-- основной блок слайдера -->
-        <?php include_once("./template-parts/swiper-block.php");?>
+        <div class="seporator"></div>
+        <h1 class="page-header-title"><?= $page_title ?></h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a href="./index.php" class="breadcrumbs-link">Главная</a>
+          </li>
+          <li class="breadcrumbs-item.active">
+            <a href="#" class="breadcrumbs-link"><?= $page_title ?></a>
+          </li>
+        </ul>
+        <!-- /.breadcrumbs -->
       </div>
       <!-- /.container -->
     </header>
-    <?php include_once("./template-parts/steps-block.php");?>
-
-    <?php $block_title = "Контрактное производство";
-    include_once ('./template-parts/production-block.php');?>
-
-    <?php $block_title = "Собственные торговые марки";
-    include_once ('./template-parts/trademarks-block.php');?>
-
-    <?php include_once("./template-parts/founder-block.php");?>
-
-    <?php include_once("./template-parts/clients-block.php");?>
-    
-    <section class="section blog">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title">
-          Блог экспертов в области производства
-        </h2>
-        <!-- Slider main container -->
-        <div class="swiper blog-slider">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/blog-photo.jpeg" alt="" class="blog-card-image">
-              <h3 class="blog-card-title">
-                Современная методология разработки одухотворила всех причастных
-              </h3>
-              <p class="blog-card-text">
-                Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...
-              </p>
-            </a>
-            <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/blog-post.jpeg" alt="" class="blog-card-image">
-              <h3 class="blog-card-title">
-                Сложно сказать, почему жизнь прекрасна
-              </h3>
-              <p class="blog-card-text">
-                Сложно сказать, почему элементы политического процесса функционально разнесены на независимые элементы. Безусловно, высокотехнологичная...
-              </p>
-            </a>
-            <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/blog-photo.jpeg" alt="" class="blog-card-image">
-              <h3 class="blog-card-title">
-                Современная методология разработки одухотворила всех причастных
-              </h3>
-              <p class="blog-card-text">
-                Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...
-              </p>
-            </a>
-          </div>
-          <div class="blog-slider-footer">
-            <a href="./blog.php" class="button-link">
-              Весь блог
-            </a>
-            <div class="blog-buttons primary-buttons-wrapper">
-              <div class="blog-button-prev primary-button-prev">
-                <svg width="30" height="20">
-                  <use href="img/sprite.svg#small-arrow-prev"></use>
-                </svg>
-              </div>
-              <div class="blog-button-next primary-button-next">
-                <svg width="30" height="20">
-                  <use href="img/sprite.svg#small-arrow-next"></use>
-                </svg>
-              </div>
-            </div>
-            <!-- /.blog-button -->
-          </div>
-          <!-- /.blog-slider-footer -->
-        </div>
-      </div>
-      <!-- /.container -->
-    </section>
-
-    <?php include_once('footer.php');?>

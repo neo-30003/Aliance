@@ -89,7 +89,7 @@ const swiperSteps = new Swiper(".steps-slider", {
       slidesPerView: 4,
     },
   },
-})
+});
 
 const swiperBlog = new Swiper(".blog-slider", {
   speed: 400,
@@ -105,7 +105,28 @@ const swiperBlog = new Swiper(".blog-slider", {
       slidesPerView: 2,
     },
   },
-})
+});
+
+const swiperResearch = new Swiper(".research-slider", {
+  loop: true,
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".blog-button-next",
+    prevEl: ".blog-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 576px
+    576: {
+      slidesPerView: 2,
+    },
+  },
+});
 
 let currentModal; //текущее модальное окно
 let modalDialog; // диалоговое окно

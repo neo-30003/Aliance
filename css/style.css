@@ -68,6 +68,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  color: #F0F2F5;
 }
 .header-image::before {
   content: "";
@@ -164,6 +165,7 @@ body {
 }
 .header-button {
   letter-spacing: 0.1px;
+  text-decoration: none;
 }
 .seporator {
   background: #5C8EE6;
@@ -208,8 +210,11 @@ body {
 .page-header-bg-image .container {
   position: relative;
 }
+.page-header-bg-grey {
+  background: #F0F2F5;
+}
 .page-header-title {
-  font-family: "Bebas Neue";
+  font-family: "BebasNeue";
   font-style: normal;
   font-size: 5rem;
   font-weight: 400;
@@ -241,7 +246,7 @@ body {
   margin-left: .625rem;
 }
 .page-header-bg-image .breadcrumbs-link,
-.breadcrumbs-item.active .breadcrumbs-link {
+.page-header-bg-image .breadcrumbs-item.active .breadcrumbs-link {
   color: #fff;
 }
 .header-title {
@@ -269,7 +274,7 @@ body {
   padding: 0;
   margin-top: 6.25rem;
   list-style: none;
-  color: white;
+  color: #292D33;
   position: relative;
   margin-bottom: 0;
 }
@@ -277,11 +282,14 @@ body {
   padding: 1.875rem 3.125rem;
   height: auto;
   width: 18rem;
-  border: 1px solid rgba(235, 235, 240, 0.20);
+  border: 1px solid rgba(235, 235, 240, 0.15);
+}
+.header-image .header-features {
+  color: #fff;
 }
 .slider-buttons {
   display: none;
-  height: 44px;
+  height: 2.75rem;
 }
 .slider-button-prev, .slider-button-next {
   height: 100%;
@@ -1010,6 +1018,353 @@ body {
   text-decoration: none;
   justify-content: center;
   align-items: center;
+}
+.description {
+  min-height: 30rem;
+  position: relative;
+}
+.description-image {
+  position: absolute;
+}
+.description-content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.description-content {
+  max-width: 52.5rem;
+  padding-top: 3.125rem;
+}
+.description-content-title {
+  margin: 1.875rem 0px 1.25rem 0px;
+}
+.description-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  min-height: 11.375rem;
+  margin-bottom: 3.25rem;
+}
+.about-production {
+  position: relative;
+}
+.about-production-wrapper {
+  display: flex;
+  gap: 7.5rem;
+}
+.about-production-content {
+  flex-basis: 50%;
+  margin-top: 3.125rem;
+}
+.about-production-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.about-production-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 1.875rem;
+}
+.about-production-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 8.125rem;
+  gap: 3.125rem;
+}
+.about-production-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+  margin-bottom: 20px;
+  letter-spacing: 0.13px;
+}
+.research-text {
+  display: flex;
+  flex-direction: row;
+  gap: 6.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 3.125rem;
+}
+.research-text-paragraph-1 {
+  max-width: 39.6875rem;
+  margin-top: 0;
+  letter-spacing: 0.13px;
+}
+.research-text-paragraph-2 {
+  max-width: 39.6875rem;
+  margin-top: 0;
+  letter-spacing: 0.15px;
+}
+.research-slider {
+  margin-top: 55px;
+}
+.research-card {
+  display: flex;
+  position: relative;
+  min-height: 25rem;
+  flex-direction: row;
+  text-decoration: none;
+  color: #fff;
+  justify-content: flex-end;
+  padding: 3.125rem;
+}
+.research-card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  z-index: -2;
+}
+.research-slider-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1.875rem;
+  justify-content: flex-end;
+}
+.production-content {
+  margin-top: 6.25rem;
+}
+.production-content-title {
+  font-family: "Noto Sans";
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 0;
+  margin-bottom: .625rem;
+}
+.production-content-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+.avtohim-AG-TECH {
+  position: relative;
+}
+.avtohim-AG-TECH-wrapper {
+  display: flex;
+  gap: 7.5rem;
+}
+.avtohim-AG-TECH-content {
+  flex-basis: 50%;
+  margin-top: 3.125rem;
+}
+.avtohim-AG-TECH-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.avtohim-AG-TECH-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 1.875rem;
+}
+.distribution {
+  min-height: 42.25rem;
+  position: relative;
+}
+.distribution-wrapper {
+  display: flex;
+  gap: 7.5rem;
+}
+.distribution-content {
+  flex-basis: 50%;
+  margin-top: 3.125rem;
+}
+.distribution-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.distribution-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 1.875rem;
+  margin-top: 0;
+}
+.distribution-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 8.125rem;
+  gap: 3.125rem;
+  margin-top: 0;
+  margin-bottom: 3.125rem;
+}
+.distribution-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+  margin-bottom: 20px;
+  letter-spacing: 0.13px;
+}
+.distribution-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem;
+}
+.book-photo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+.contacts {
+  margin-top: 3.125rem;
+}
+.contacts-footer-top {
+  justify-content: space-between;
+  margin-bottom: 3.125rem;
+}
+.politics {
+  margin-top: 6.25rem;
+}
+.politics-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0;
+  max-height: 46.875rem;
+}
+.avtohim {
+  position: relative;
+}
+.avtohim-wrapper {
+  display: flex;
+  gap: 7.5rem;
+}
+.avtohim-content {
+  flex-basis: 50%;
+  margin-top: 3.125rem;
+}
+.avtohim-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.avtohim-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 1.875rem;
+}
+.manufacturing {
+  min-height: 41.25rem;
+  position: relative;
+}
+.manufacturing-wrapper {
+  display: flex;
+  gap: 7.5rem;
+}
+.manufacturing-content {
+  flex-basis: 50%;
+  margin-top: 3.125rem;
+}
+.manufacturing-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.manufacturing-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 1.875rem;
+  margin-top: 0;
+}
+.manufacturing-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 8.125rem;
+  gap: 3.125rem;
+  margin-top: 0;
+  margin-bottom: 3.125rem;
+}
+.manufacturing-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+  margin-bottom: 20px;
+  letter-spacing: 0.13px;
+}
+.microscope-photo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+  max-width: 52.5rem;
+  max-height: 41.25rem;
+}
+.avtohim-roster {
+  position: relative;
+}
+.avtohim-roster-wrapper {
+  display: flex;
+}
+.avtohim-roster-content {
+  flex-basis: 58%;
+}
+.avtohim-roster-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.avtohim-roster-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 3.125rem;
+  margin-top: 0;
+}
+.avtohim-roster-list {
+  list-style: none;
+  padding: 0;
+  columns: 4 auto;
+  gap: 3.125rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.avtohim-roster-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+  margin-bottom: 20px;
+  letter-spacing: 0.13px;
+}
+.avtohim-roster-list-item::before {
+  content: "";
+  height: 1px;
+  background: #5C8EE5;
+  width: 1rem;
 }
 @media(max-width:1700px) {
   html {
