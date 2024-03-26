@@ -230,7 +230,11 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/blog-photo.jpeg" alt="" class="blog-card-image">
+              <picture class="blog-card-image">
+                <source class="blog-card-image" type="image/webp" srcset="img/blog/blog-photo.webp">
+                <source class="blog-card-image" type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
+                <img class="blog-card-image" src="img/blog/blog-photo.jpeg" alt="">
+              </picture>
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -239,7 +243,11 @@
               </p>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/blog-post.jpeg" alt="" class="blog-card-image">
+              <picture class="blog-card-image">
+                <source class="blog-card-image" type="image/webp" srcset="img/blog/blog-post.webp">
+                <source class="blog-card-image" type="image/jpeg" srcset="img/blog/blog-post.jpeg">
+                <img class="blog-card-image" src="img/blog/blog-post.jpeg" alt="">
+              </picture>
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
               </h3>
@@ -248,7 +256,11 @@
               </p>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/blog-photo.jpeg" alt="" class="blog-card-image">
+              <picture class="blog-card-image">
+                <source class="blog-card-image" type="image/webp" srcset="img/blog/blog-photo.webp">
+                <source class="blog-card-image" type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
+                <img class="blog-card-image" src="img/blog/blog-photo.jpeg" alt="">
+              </picture>
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>

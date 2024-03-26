@@ -5,7 +5,11 @@ include_once('header-page.php');?>
 <section class="section avtohim-AG-TECH">
   <div class="container">
     <div class="avtohim-AG-TECH-wrapper ">
-      <img src="img/gloves.jpeg" class="gloves-photo" alt="gloves">
+      <picture class="gloves-photo">
+        <source class="gloves-photo" type="image/webp" srcset="img/gloves.webp">
+        <source class="gloves-photo" type="image/jpeg" srcset="img/gloves.jpeg">
+        <img class="gloves-photo" src="img/gloves.jpeg" alt="gloves">
+      </picture>
       <div class="avtohim-AG-TECH-content">
         <div class="seporator"></div>
         <h2 class="section-title avtohim-AG-TECH-title">Собственное производство автохимия AG-Tech</h2>
@@ -65,7 +69,11 @@ include_once('header-page.php');?>
       </div>
     </div>
   </div>
-  <img src="img/book.jpeg" class="book-photo" alt="book">
+  <picture class="book-photo">
+    <source class="book-photo" type="image/webp" srcset="img/book.webp">
+    <source class="book-photo" type="image/jpeg" srcset="img/book.jpeg">
+    <img class="book-photo" src="img/book.jpeg" alt="book">
+  </picture>
 </section>
 <?php include_once("./template-parts/research-block.php");?>
 <?php include_once("./template-parts/steps-block.php");?>

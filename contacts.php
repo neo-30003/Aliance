@@ -41,7 +41,11 @@ include_once('header-page.php');?>
       <!-- /.footer-social -->
     </div>
     <!-- /.footer-top -->
-    <img src="img/map.jpeg" alt="map">
+    <picture class="map-photo">
+      <source class="map-photo" type="image/webp" srcset="img/map.webp">
+      <source class="map-photo" type="image/jpeg" srcset="img/map.jpeg">
+      <img class="map-photo" src="img/map.jpeg" alt="map">
+    </picture>
   </div>
 </section>
 <?php include_once('footer.php');?>

@@ -4,7 +4,11 @@ $header_style = 'page-header-bg-grey';
 include_once('header-page.php');?>
 <section class="section description">
   <div class="container">
-    <img src="img/factory.jpeg" alt="factory-photo" class="description-image">
+    <picture class="description-image">
+      <source class="description-image" type="image/webp" srcset="img/factory.webp">
+      <source class="description-image" type="image/jpeg" srcset="img/factory.jpeg">
+      <img class="description-image" src="img/factory.jpeg" alt="factory-photo">
+    </picture>
     <div class="description-content-wrapper">
       <div class="description-content">
         <div class="seporator"></div>
@@ -67,7 +71,11 @@ include_once('header-page.php');?>
           </li>
         </ul>
       </div>
-      <img src="img/woman.jpeg" class="woman-photo" alt="woman">
+      <picture class="woman-photo">
+        <source class="woman-photo" type="image/webp" srcset="img/woman.webp">
+        <source class="woman-photo" type="image/jpeg" srcset="img/woman.jpeg">
+        <img class="woman-photo" src="img/woman.jpeg" alt="woman">
+      </picture>
     </div>
   </div>
 </section>

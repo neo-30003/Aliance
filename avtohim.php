@@ -5,7 +5,11 @@ include_once('header-page.php');?>
 <section class="section avtohim">
   <div class="container">
     <div class="avtohim-wrapper ">
-      <img src="img/man.jpeg" class="man-photo" alt="man">
+      <picture class="man-photo">
+        <source class="man-photo" type="image/webp" srcset="img/man.webp">
+        <source class="man-photo" type="image/jpeg" srcset="img/man.jpeg">
+        <img class="man-photo" src="img/man.jpeg" alt="man">
+      </picture>
       <div class="avtohim-content">
         <div class="seporator"></div>
         <h2 class="section-title avtohim-title">Контрактное производство автомобильной химии</h2>
@@ -81,7 +85,11 @@ include_once('header-page.php');?>
       </div>
     </div>
   </div>
-  <img src="img/microscope.jpeg" class="microscope-photo" alt="microscope">
+  <picture class="microscope-photo">
+    <source class="microscope-photo" type="image/webp" srcset="img/microscope.webp">
+    <source class="microscope-photo" type="image/jpeg" srcset="img/microscope.jpeg">
+    <img class="microscope-photo" src="img/microscope.jpeg" alt="microscope">
+  </picture>
 </section>
 <section class="section avtohim-roster">
   <div class="container">

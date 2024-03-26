@@ -15,16 +15,32 @@
     <div class="swiper research-slider">
       <div class="swiper-wrapper research-wrapper">
         <div class="swiper-slide research-card">
-          <img src="img/blog/blog-photo.jpeg" alt="" class="research-card-image">
+          <picture class="research-card-image">
+            <source class="research-card-image" type="image/webp" srcset="img/blog/blog-photo.webp">
+            <source class="research-card-image" type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
+            <img class="research-card-image" src="img/blog/blog-photo.jpeg" alt="">
+          </picture>
         </div>
         <div class="swiper-slide research-card">
-          <img src="img/blog/blog-post.jpeg" alt="" class="research-card-image">
+          <picture class="research-card-image">
+            <source class="research-card-image" type="image/webp" srcset="img/blog/blog-post.webp">
+            <source class="research-card-image" type="image/jpeg" srcset="img/blog/blog-post.jpeg">
+            <img class="research-card-image" src="img/blog/blog-post.jpeg" alt="">
+          </picture>
         </div>
         <div class="swiper-slide research-card">
-          <img src="img/blog/blog-photo.jpeg" alt="" class="research-card-image">
+          <picture class="research-card-image">
+            <source class="research-card-image" type="image/webp" srcset="img/blog/blog-photo.webp">
+            <source class="research-card-image" type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
+            <img class="research-card-image" src="img/blog/blog-photo.jpeg" alt="">
+          </picture>
         </div>
         <div class="swiper-slide research-card">
-          <img src="img/blog/blog-post.jpeg" alt="" class="research-card-image">
+          <picture class="research-card-image">
+            <source class="research-card-image" type="image/webp" srcset="img/blog/blog-post.webp">
+            <source class="research-card-image" type="image/jpeg" srcset="img/blog/blog-post.jpeg">
+            <img class="research-card-image" src="img/blog/blog-post.jpeg" alt="">
+          </picture>
         </div>
       </div>
       <div class="research-slider-footer">
