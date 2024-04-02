@@ -23,10 +23,14 @@ include_once('header-page.php');?>
 </section>
 <section class="section about-production">
   <div class="container">
-    <div class="about-production-wrapper ">
+    <div class="about-production-wrapper">
       <div class="about-production-content">
-        <div class="seporator"></div>
-        <h2 class="section-title about-production-title">Наше производство</h2>
+        <div class="about-production-title-content">
+          <div class="seporator"></div>
+          <h2 class="section-title about-production-title">
+            Наше производство
+          </h2>
+        </div>
         <p class="about-production-text">
           Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает широкому кругу (специалистов) участие в формировании глубокомысленных рассуждений. Но граница обучения кадров создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса кластеризации усилий.<br />
           <br />
@@ -70,12 +74,12 @@ include_once('header-page.php');?>
             Краски аэрозольные
           </li>
         </ul>
+        <picture class="woman-photo">
+          <source class="woman-photo" type="image/webp" srcset="img/woman.webp">
+          <source class="woman-photo" type="image/jpeg" srcset="img/woman.jpeg">
+          <img class="woman-photo" src="img/woman.jpeg" alt="woman">
+        </picture>
       </div>
-      <picture class="woman-photo">
-        <source class="woman-photo" type="image/webp" srcset="img/woman.webp">
-        <source class="woman-photo" type="image/jpeg" srcset="img/woman.jpeg">
-        <img class="woman-photo" src="img/woman.jpeg" alt="woman">
-      </picture>
     </div>
   </div>
 </section>

@@ -34,25 +34,25 @@ include_once('header-page.php');?>
         </p>
         <ul class="distribution-list">
           <li class="distribution-list-item">
-            <svg width="30" height="30" class="distribution-list-icon">
+            <svg width="24" height="24" class="distribution-list-icon">
               <use href="/img/sprite.svg#him"></use>
             </svg>
             Полное описание товаров
           </li>
           <li class="distribution-list-item">
-            <svg width="30" height="30" class="distribution-list-icon">
+            <svg width="24" height="24" class="distribution-list-icon">
               <use href="/img/sprite.svg#car"></use>
             </svg>
             Актуальные цены
           </li>
           <li class="distribution-list-item">
-            <svg width="30" height="30" class="distribution-list-icon">
+            <svg width="24" height="24" class="distribution-list-icon">
               <use href="/img/sprite.svg#brush"></use>
             </svg>
             Лаки и краски
           </li>
           <li class="distribution-list-item">
-            <svg width="30" height="30" class="distribution-list-icon">
+            <svg width="24" height="24" class="distribution-list-icon">
               <use href="/img/sprite.svg#him"></use>
             </svg>
             Химические производства

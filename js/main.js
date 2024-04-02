@@ -128,6 +128,19 @@ const swiperResearch = new Swiper(".research-slider", {
   },
 });
 
+const swiperBlogContent = new Swiper(".blog-slider-content", {
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
+
 let currentModal; //текущее модальное окно
 let modalDialog; // диалоговое окно
 let alertModal = document.querySelector("#alert-modal"); // окно с предупреждением

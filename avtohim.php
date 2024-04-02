@@ -103,27 +103,27 @@ include_once('header-page.php');?>
       </div>
     </div>
     <ul class="avtohim-roster-list">
-          <li class="avtohim-roster-list-item">Антискотч</li>
-          <li class="avtohim-roster-list-item">Многоцелевая смазка</li>
-          <li class="avtohim-roster-list-item">Жидкий ключ</li>
-          <li class="avtohim-roster-list-item">Высокотемпературная смазка</li>
-          <li class="avtohim-roster-list-item">Универсальный очиститель деталей</li>
-          <li class="avtohim-roster-list-item">Силиконовая смазка</li>
-          <li class="avtohim-roster-list-item">Цепная смазка</li>
-          <li class="avtohim-roster-list-item">Медная смазка</li>
-          <li class="avtohim-roster-list-item">Графитовая смазка</li>
-          <li class="avtohim-roster-list-item">Очиститель кондиционера пенный</li>
-          <li class="avtohim-roster-list-item">Очиститель тормозных дисков</li>
-          <li class="avtohim-roster-list-item">Очиститель битумных пятен</li>
-          <li class="avtohim-roster-list-item">Очиститель кондционера</li>
-          <li class="avtohim-roster-list-item">Очиститель дросельной заслонки</li>
-          <li class="avtohim-roster-list-item">Очиститель обивки</li>
-          <li class="avtohim-roster-list-item">Тефлоновая смазка</li>
-          <li class="avtohim-roster-list-item">Очиститель двигателя</li>
-          <li class="avtohim-roster-list-item">Универсальный очиститель</li>
-          <li class="avtohim-roster-list-item">Чернитель шин</li>
-          <li class="avtohim-roster-list-item">Чернитель шин + очистка</li>
-        </ul>
+      <li class="avtohim-roster-list-item">Антискотч</li>
+      <li class="avtohim-roster-list-item">Многоцелевая смазка</li>
+      <li class="avtohim-roster-list-item">Жидкий ключ</li>
+      <li class="avtohim-roster-list-item">Высокотемпературная смазка</li>
+      <li class="avtohim-roster-list-item">Универсальный очиститель деталей</li>
+      <li class="avtohim-roster-list-item">Силиконовая смазка</li>
+      <li class="avtohim-roster-list-item">Цепная смазка</li>
+      <li class="avtohim-roster-list-item">Медная смазка</li>
+      <li class="avtohim-roster-list-item">Графитовая смазка</li>
+      <li class="avtohim-roster-list-item">Очиститель кондиционера пенный</li>
+      <li class="avtohim-roster-list-item">Очиститель тормозных дисков</li>
+      <li class="avtohim-roster-list-item">Очиститель битумных пятен</li>
+      <li class="avtohim-roster-list-item">Очиститель кондционера</li>
+      <li class="avtohim-roster-list-item">Очиститель дросельной заслонки</li>
+      <li class="avtohim-roster-list-item">Очиститель обивки</li>
+      <li class="avtohim-roster-list-item">Тефлоновая смазка</li>
+      <li class="avtohim-roster-list-item">Очиститель двигателя</li>
+      <li class="avtohim-roster-list-item">Универсальный очиститель</li>
+      <li class="avtohim-roster-list-item">Чернитель шин</li>
+      <li class="avtohim-roster-list-item">Чернитель шин + очистка</li>
+    </ul>
   </div>
 </section>
 <?php include_once('./template-parts/research-block.php');

@@ -23,7 +23,7 @@
           <img class="card-image" src="img/avto-him.png" alt="Автомобильная химия">
         </picture>
       </a>
-      <a href="#" class="card">
+      <a href="./404.php" class="card">
         <div class="card-content">
           <h3 class="card-title">
             Бытовая химия
@@ -39,7 +39,7 @@
           <img class="card-image" src="img/household.png" alt="Бытовая химия">
         </picture>
       </a>
-      <a href="#" class="card">
+      <a href="./404.php" class="card">
         <div class="card-content">
           <h3 class="card-title">
             Дезинфицирующие средства
@@ -55,7 +55,7 @@
           <img class="card-image" src="img/desinfection.png" alt="Дезинфицирующие средства">
         </picture>
       </a>
-      <a href="#" class="card">
+      <a href="./404.php" class="card">
         <div class="card-content">
           <h3 class="card-title">
             Пищевые аэрозоли
@@ -71,7 +71,7 @@
           <img class="card-image" src="img/food.png" alt="Пищевые аэрозоли">
         </picture>
       </a>
-      <a href="#" class="card">
+      <a href="./404.php" class="card">
         <div class="card-content">
           <h3 class="card-title">
             Косметическая продукция
@@ -87,7 +87,7 @@
           <img class="card-image" src="img/him.png" alt="Косметическая продукция">
         </picture>
       </a>
-      <a href="#" class="card">
+      <a href="./404.php" class="card">
         <div class="card-content">
           <h3 class="card-title">
             Краски аэрозольные

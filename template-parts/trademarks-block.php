@@ -20,7 +20,7 @@
         </p>
         <!-- /.trademark-card-content -->
       </a>
-      <a href="#" class="trademark-card">
+      <a href="./404.php" class="trademark-card">
         <svg class="trademark-card-logo">
           <use href="img/sprite.svg#AP"></use>
         </svg>
