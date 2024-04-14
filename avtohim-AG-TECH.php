@@ -2,6 +2,30 @@
 $page_title = 'Автохимия AG-Tech';
 $header_style = "page-header-bg-grey";
 include_once('header-page.php');?>
+<header class="page-header <?= $header_style;?>">
+  <picture class="page-header-bg-thumb">
+    <source class="page-header-bg-thumb" type="image/webp" srcset="img/thumb.webp">
+    <source class="page-header-bg-thumb" type="image/jpeg" srcset="img/thumb.png">
+    <img class="page-header-bg-thumb" src="img/thumb.png" alt="">
+  </picture>
+  <div class="container">
+    <div class="seporator"></div>
+    <h1 class="page-header-title"><?= $page_title ?></h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a href="./index.php" class="breadcrumbs-link">Главная</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a href="./trademarks.php" class="breadcrumbs-link">Собственные торговые марки</a>
+      </li>
+      <li class="breadcrumbs-item active">
+        <a href="#" class="breadcrumbs-link"><?= $page_title ?></a>
+      </li>
+    </ul>
+    <!-- /.breadcrumbs -->
+  </div>
+  <!-- /.container -->
+</header>
 <section class="section avtohim-AG-TECH">
   <div class="container">
     <div class="avtohim-AG-TECH-wrapper ">
@@ -28,7 +52,7 @@ include_once('header-page.php');?>
     <div class="distribution-wrapper ">
       <div class="distribution-content">
         <div class="seporator"></div>
-        <h2 class="section-title distribution-title">Генеральный дистрибьютор премиальнойавтохимии</h2>
+        <h2 class="section-title distribution-title">Генеральный дистрибьютор премиальной автохимии</h2>
         <p class="distribution-text">
           Внезапно, активно развивающиеся страны третьего мира могут быть объявлены нарушающими общечеловеческие нормы этики и морали.
         </p>

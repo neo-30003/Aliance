@@ -1,4 +1,4 @@
-<section class="cta">
+    <section class="cta">
       <div class="bg-grey section-cta">
         <picture class="cta-image">
           <source class="cta-image" type="image/webp" srcset="img/cta.webp">
@@ -87,7 +87,7 @@
         <!-- /.footer-top -->
       </div>
       <!-- /.container -->
-      <hr color="#EBEBF0" class="footer-seporator"/>
+      <hr color="#EBEBF0" class="footer-seporator">
       <div class="container">
         <div class="footer-bottom">
           <div class="footer-menu-wrapper">
@@ -164,7 +164,7 @@
         <!-- /.footer-bottom -->
       </div>
       <!-- /.container -->
-      <hr color="#EBEBF0" class="footer-seporator"/>
+      <hr color="#EBEBF0" class="footer-seporator">
       <div class="container">
         <div class="footer-wrapper footer-wrapper-legal">
           <div class="footer-legal">

@@ -8,7 +8,7 @@
         <use href="img/sprite.svg#Time"></use>
       </svg>
       <p class="header-features-text">
-        Непрерывная работа c 2017 года
+        Непрерывная работа c<br>2017 года
       </p>
     </li>
     <li class="swiper-slide header-features-item">
@@ -16,7 +16,7 @@
         <use href="img/sprite.svg#Certificate"></use>
       </svg>
       <p class="header-features-text">
-        Вся продукция сертифицирована
+        Вся продукция<br>сертифицирована
       </p>
     </li>
     <li class="swiper-slide header-features-item">
@@ -24,7 +24,7 @@
         <use href="img/sprite.svg#Control"></use>
       </svg>
       <p class="header-features-text">
-        Контроль качества на всех этапах
+        Контроль качества на<br>всех этапах
       </p>
     </li>
     <li class="swiper-slide header-features-item">
@@ -32,7 +32,7 @@
         <use href="img/sprite.svg#Delivery"></use>
       </svg>
       <p class="header-features-text">
-        Возможны поставки по всей России
+        Возможны поставки по<br>всей России
       </p>
     </li>
     <li class="swiper-slide header-features-item">
@@ -40,7 +40,7 @@
         <use href="img/sprite.svg#Speed"></use>
       </svg>
       <p class="header-features-text">
-        Оперативное производство
+        Оперативное<br>производство
       </p>
     </li>
   </ul>

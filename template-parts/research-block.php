@@ -1,7 +1,7 @@
 <section class="section research">
   <div class="container">
     <div class="seporator"></div>
-    <h2 class="section-title">
+    <h2 class="section-title research-title">
       Исследовательский центр <br> Aliance production
     </h2>
     <div class="swiper research-slider">
@@ -14,9 +14,9 @@
           </div>
           <div class="research-card-image">
             <picture class="research-card-photo">
-              <source class="research-card-photo" type="image/webp" srcset="img/blog/blog-photo.webp">
-              <source class="research-card-photo" type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
-              <img class="research-card-photo" src="img/blog/blog-photo.jpeg" alt="">
+              <source class="research-card-photo" type="image/webp" srcset="img/blog/blog-post.webp">
+              <source class="research-card-photo" type="image/jpeg" srcset="img/blog/blog-post.jpeg">
+              <img class="research-card-photo" src="img/blog/blog-post.jpeg" alt="">
             </picture>
           </div>
         </div>
@@ -28,9 +28,9 @@
           </div>
           <div class="research-card-image">
             <picture class="research-card-photo">
-              <source class="research-card-photo" type="image/webp" srcset="img/blog/blog-post.webp">
-              <source class="research-card-photo" type="image/jpeg" srcset="img/blog/blog-post.jpeg">
-              <img class="research-card-photo" src="img/blog/blog-post.jpeg" alt="">
+              <source class="research-card-photo" type="image/webp" srcset="img/blog/blog-photo.webp">
+              <source class="research-card-photo" type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
+              <img class="research-card-photo" src="img/blog/blog-photo.jpeg" alt="">
             </picture>
           </div>
         </div>
@@ -42,9 +42,9 @@
           </div>
           <div class="research-card-image">
             <picture class="research-card-photo">
-              <source class="research-card-photo" type="image/webp" srcset="img/blog/blog-photo.webp">
-              <source class="research-card-photo" type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
-              <img class="research-card-photo" src="img/blog/blog-photo.jpeg" alt="">
+              <source class="research-card-photo" type="image/webp" srcset="img/blog/blog-post.webp">
+              <source class="research-card-photo" type="image/jpeg" srcset="img/blog/blog-post.jpeg">
+              <img class="research-card-photo" src="img/blog/blog-post.jpeg" alt="">
             </picture>
           </div>
         </div>
@@ -56,9 +56,9 @@
           </div>
           <div class="research-card-image">
             <picture class="research-card-photo">
-              <source class="research-card-photo" type="image/webp" srcset="img/blog/blog-post.webp">
-              <source class="research-card-photo" type="image/jpeg" srcset="img/blog/blog-post.jpeg">
-              <img class="research-card-photo" src="img/blog/blog-post.jpeg" alt="">
+              <source class="research-card-photo" type="image/webp" srcset="img/blog/blog-photo.webp">
+              <source class="research-card-photo" type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
+              <img class="research-card-photo" src="img/blog/blog-photo.jpeg" alt="">
             </picture>
           </div>
         </div>

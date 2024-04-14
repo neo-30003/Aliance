@@ -185,24 +185,3 @@
       </button>
     </nav>
     <!-- /.navbar -->
-    <header class="page-header <?= $header_style;?>">
-      <!-- <picture class="page-header-bg-thumb">
-        <source class="page-header-bg-thumb" type="image/webp" srcset="img/thumb.webp">
-        <source class="page-header-bg-thumb" type="image/jpeg" srcset="img/thumb.png">
-        <img class="page-header-bg-thumb" src="img/thumb.png" alt="">
-      </picture> -->
-      <div class="container">
-        <div class="seporator"></div>
-        <h1 class="page-header-title"><?= $page_title ?></h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a href="./index.php" class="breadcrumbs-link">Главная</a>
-          </li>
-          <li class="breadcrumbs-item active">
-            <a href="#" class="breadcrumbs-link"><?= $page_title ?></a>
-          </li>
-        </ul>
-        <!-- /.breadcrumbs -->
-      </div>
-      <!-- /.container -->
-    </header>

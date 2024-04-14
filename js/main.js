@@ -122,7 +122,7 @@ const swiperResearch = new Swiper(".research-slider", {
       slidesPerView: 1,
     },
     // when window width is >= 576px
-    576: {
+    768: {
       slidesPerView: 2,
     },
   },
