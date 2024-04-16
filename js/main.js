@@ -165,7 +165,57 @@ document.addEventListener("keyup", (event) => { /* отслеживание на
   }
 });
 
-const forms = document.querySelectorAll("form"); // Собираем формы
+const ctaForm = document.querySelectorAll(".cta-form"); // Собираем формы
+ctaForm.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validation
+  .addField("[name=username]", [
+    {
+      rule: "required",
+      errorMessage: "Укажите имя",
+    },
+    {
+      rule: "maxLength",
+      value: 50,
+      errorMessage: "Максимум 50 символов",
+    },
+  ])
+  .addField("[name=userphone]", [
+    {
+      rule: "required",
+      errorMessage: "Укажите номер телефона",
+    },
+  ])
+  .onSuccess((event) => {
+    const thisForm = event.target; // наша форма
+    const formData = new FormData(thisForm); // данные из нашей формы
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then((response) => {
+        if (response.ok) {
+          thisForm.reset();
+          alertModal.classList.add("is-open");
+          currentModal = alertModal;
+          modalDialog = currentModal.querySelector(".modal-dialog");
+          currentModal.addEventListener("click", event => {
+            if (!event.composedPath().includes(modalDialog)) {
+              currentModal.classList.remove("is-open");
+            }
+          });
+        } else {
+          alert("Ошибка. Текст ошибки: ".response.statusText);
+        }
+      });
+    };
+    ajaxSend(formData);
+  });
+});
+
+const forms = document.querySelectorAll(".modal-form"); // Собираем формы
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",
